@@ -16,4 +16,7 @@ To delete all generated code :
 To only generate the client code without starting the project : 
 `yarn run generate-client`
 
-Note that generated code is ignored in git (see .gitignore)
+Generated code is ignored in git (see .gitignore)
+
+By default, it will try to connect to 'http://example.com/api/users'.  
+You can change this by editing src/UserApiConfiguration.ts (see parameter named 'basePath')

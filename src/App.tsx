@@ -6,7 +6,9 @@ import UserList from './users/UserList';
 import { User } from './generated/user-api/models/User';
 import { DefaultApi }  from './generated/user-api/apis/DefaultApi';
 
-const userApi:DefaultApi = new DefaultApi();
+import UserApiConfiguration from './UserApiConfiguration';
+
+const userApi:DefaultApi = new DefaultApi(UserApiConfiguration);
 
 async function fetchUsers(): Promise<Array<User>> {
   return await userApi.getusers();
