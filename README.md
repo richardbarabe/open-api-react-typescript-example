@@ -15,3 +15,5 @@ To delete all generated code :
 
 To only generate the client code without starting the project : 
 `yarn run generate-client`
+
+Note that generated code is ignored in git (see .gitignore)
