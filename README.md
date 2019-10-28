@@ -1,4 +1,4 @@
-This project is a basic example of using openapiTools/openapi-generator (npm version) to generate and use a typescript-fetch client from an openapi descriptor (see api.yaml at project root).
+This project is a basic example of using openapiTools/openapi-generator (npm version) to generate and use a typescript-fetch client from an openapi descriptor (see userApi.yaml at project root).
 
 Client code will be generated when starting or building the application.
 
