@@ -1,0 +1,41 @@
+{
+  "name": "react-typescript-openapi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.20",
+    "@types/node": "12.11.7",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.3",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0",
+    "typescript": "3.6.4"
+  },
+  "scripts": {
+    "clean": "rm -rf generated-sources && rm -rf src/generated",
+    "generate-client": "./generate-client.sh",
+    "start": "npm run generate-client && react-scripts start",
+    "build": "npm run generate-client && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^1.0.1-4.1.3"
+  }
+}
